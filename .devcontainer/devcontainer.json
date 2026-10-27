@@ -1,0 +1,16 @@
+{
+  "name": "ASP.NET Core 10 CRUD Lab",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:2.3.2-10.0-noble",
+  "forwardPorts": [5080],
+  "portsAttributes": {
+    "5080": {
+      "label": "Giao dien va API CRUD",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csharp"]
+    }
+  }
+}

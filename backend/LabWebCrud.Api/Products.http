@@ -1,0 +1,32 @@
+@host = http://localhost:5080
+
+### GET tat ca
+GET {{host}}/api/products
+
+### GET theo id
+GET {{host}}/api/products/1
+
+### POST tao moi
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Webcam Full HD",
+  "description": "Camera cho hoc online",
+  "price": 820000,
+  "quantity": 7
+}
+
+### PUT sua (thay id=4 neu san pham moi co id 4)
+PUT {{host}}/api/products/4
+Content-Type: application/json
+
+{
+  "name": "Webcam Full HD 1080p",
+  "description": "Da cap nhat",
+  "price": 790000,
+  "quantity": 10
+}
+
+### DELETE (thay id neu can)
+DELETE {{host}}/api/products/4
